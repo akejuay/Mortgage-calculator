@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <main>
+
+       <!-- OVERALL DIV -->
+        <div class="overall">
+
+          <!-- FIRST SIDE -->
+           <aside>
+             <div class="title">
+                <h3 class="tit">Mortgage Calculator</h3>
+                <button class="tit-btn" id="clear">Clear All</button>
+             </div>
+
+             <!-- INPUT DIV -->
+             <div>
+
+               <!-- MORTGAGE AMOUNT -->
+                <div class="mortamount">
+                   <label for="N">Mortgage Amount</label>
+                   <div>
+                      <p>&euro;</p>
+                      <input type="text" required id="amount">
+                   </div>
+                </div>
+
+                <!-- MORTGAGE TERMS AND RATE -->
+                <div class="mort">
+                   <div class="mortterm">
+                      <label for="year">Mortgage Term</label>
+                      <div>
+                         <input type="text" required id="term">
+                         <p>years</p>
+                      </div>
+                   </div>
+                   <div class="mortrate">
+                      <label for="%">Interest Rate</label>
+                      <div>
+                         <input type="text" required id="interest">
+                         <p>%</p>
+                      </div>
+                   </div>
+                </div>
+
+
+                <!-- MORTGAGE TYPE -->
+                <label for="type" class="types">Mortgage Type</label>
+                <div class="repay">
+                   <input type="radio" name="type" class="radio" checked>
+                   <p>Repayment</p>
+                </div>
+                <div class="interest">
+                    <input type="radio" name="type">
+                    <p>Interest Only</p>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="but">
+                     <button class="mortbut" onclick="calculate()">
+                        <img src="/mortgage-repayment-calculator-main/assets/images/icon-calculator.svg" alt="">
+                        Calculate Repayment
+                     </button>
+                </div>
+             </div>
+          </aside>
+
+
+          <!-- SECOND SECTION -->
+          <section>
+              <div>
+                  <div id="wrapper">
+                     <div class="empty">
+                     <img src="/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg" alt="">
+                     <p class="result">Results shown here</p>
+                     <p class="the">Complete the form and click "calculate repayment"
+                        to see what your monthly repayment would be.
+                     </p>
+                  </div>
+                  </div>
+              </div>
+          </section>
+        </div>
+    </main>
+
+    <script src="/mortgage-repayment-calculator-main/app.js"></script>
+</body>
+</html>
