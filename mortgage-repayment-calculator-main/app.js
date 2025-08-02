@@ -12,7 +12,7 @@ clearAll.addEventListener('click', ()=>{
 
     return document.getElementById('wrapper').innerHTML = `
     <div class="empty">
-    <img src="/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg" alt="">
+    <img src="./assets/images/icon-calculator.svg" alt="">
     <p class="result">Results shown here</p>
     <p class="the">Complete the form and click "calculate repayment"
     to see what your monthly repayment would be.
